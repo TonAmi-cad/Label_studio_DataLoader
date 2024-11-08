@@ -497,3 +497,38 @@
 2024-11-08 14:26:25,863 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00050_4.png
 2024-11-08 14:26:27,166 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00056_2.png
 2024-11-08 14:26:28,609 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00056_3.png
+2024-11-08 14:32:16,813 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:32:18,971 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:32:18,972 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:32:21,887 - utils.logging_utils - INFO - Created project augmented_images with ID: 86
+2024-11-08 14:32:41,226 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 86
+2024-11-08 14:32:41,227 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:32:41,445 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 15 потоков
+2024-11-08 14:32:45,326 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00000_1.png
+2024-11-08 14:32:47,337 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00000_2.png
+2024-11-08 14:32:51,394 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00000_3.png
+2024-11-08 14:32:56,548 - utils.logging_utils - INFO - Worker 12: Загружен файл aug1_render_00002_4.png
+2024-11-08 14:32:57,923 - utils.logging_utils - INFO - Worker 9: Загружен файл aug1_render_00001_5.png
+2024-11-08 14:32:59,301 - utils.logging_utils - INFO - Worker 8: Загружен файл aug1_render_00001_4.png
+2024-11-08 14:33:00,844 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00003_3.png
+2024-11-08 14:33:02,356 - utils.logging_utils - INFO - Worker 6: Загружен файл aug1_render_00001_1.png
+2024-11-08 14:33:03,614 - utils.logging_utils - INFO - Worker 10: Загружен файл aug1_render_00002_1.png
+2024-11-08 14:33:05,691 - utils.logging_utils - INFO - Worker 9: Загружен файл aug1_render_00003_5.png
+2024-11-08 14:33:07,148 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00004_2.png
+2024-11-08 14:33:08,518 - utils.logging_utils - INFO - Worker 10: Загружен файл aug1_render_00004_4.png
+2024-11-08 14:33:11,921 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00000_5.png
+2024-11-08 14:33:11,939 - utils.logging_utils - INFO - Worker 8: Загружен файл aug1_render_00004_1.png
+2024-11-08 14:33:13,166 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00005_1.png
+2024-11-08 14:33:14,254 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00000_4.png
+2024-11-08 14:33:16,255 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00002_2.png
+2024-11-08 14:33:17,378 - utils.logging_utils - ERROR - Worker 7: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00001_2.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:33:17,454 - utils.logging_utils - ERROR - Worker 1: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00001_3.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:33:19,201 - utils.logging_utils - INFO - Worker 10: Загружен файл aug1_render_00005_2.png
+2024-11-08 14:33:19,727 - utils.logging_utils - ERROR - Worker 11: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00002_3.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:33:20,102 - utils.logging_utils - INFO - Worker 15: Загружен файл aug1_render_00003_2.png
+2024-11-08 14:33:21,009 - utils.logging_utils - ERROR - Worker 13: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00002_5.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:33:21,210 - utils.logging_utils - INFO - Worker 9: Загружен файл aug1_render_00004_5.png
+2024-11-08 14:33:21,526 - utils.logging_utils - ERROR - Worker 14: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00003_1.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:33:22,577 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00006_1.png
+2024-11-08 14:33:24,125 - utils.logging_utils - INFO - Worker 15: Загружен файл aug1_render_00006_4.png
+2024-11-08 14:33:27,161 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00007_1.png
