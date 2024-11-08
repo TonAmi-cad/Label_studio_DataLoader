@@ -19,7 +19,7 @@ def main():
         
         print("\nВыберите режим работы:")
         print("1. Обработка папок")
-        print("2. Обработка с указанного индекса")
+        print("2. Продолжение загрузки")
         print("3. Удаление изображений")
         
         mode = input("Выберите режим (1-3): ").strip()
@@ -41,11 +41,11 @@ def main():
                     return
                 processor.process_directory(directory_path)
             else:
-                directory_path, start_index = get_directory_and_start_index()
+                directory_path = input("Введите путь к директории с изображениями: ").strip()
                 if not os.path.isdir(directory_path):
                     logger.error("Указанный путь не является директорией")
                     return
-                processor.process_directory_from_index(directory_path, start_index)
+                processor.process_directory_from_index(directory_path)
         
         elif mode == "3":
             projects = api.get_project_list()

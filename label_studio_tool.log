@@ -52,3 +52,27 @@
 2024-11-08 13:06:54,963 - utils.logging_utils - INFO - Удалено изображение (ID: 111) из проекта 77
 2024-11-08 13:06:54,965 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
 2024-11-08 13:06:54,966 - utils.logging_utils - INFO - Обработка успешно завершена
+2024-11-08 13:20:24,319 - utils.logging_utils - WARNING - В папке не найдено файлов
+2024-11-08 13:20:24,321 - utils.logging_utils - INFO - Обработка успешно завершена
+2024-11-08 13:26:55,731 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:27:15,774 - utils.logging_utils - INFO - Найден существующий проект: augmented_images (ID: 77)
+2024-11-08 13:27:18,381 - utils.logging_utils - INFO - В проекте augmented_images уже загружено 100 изображений
+2024-11-08 13:27:18,382 - utils.logging_utils - INFO - Продолжение загрузки augmented_images с индекса 100
+2024-11-08 13:27:18,383 - utils.logging_utils - INFO - Будет загружено 93150 новых изображений из augmented_images
+2024-11-08 13:27:18,386 - utils.logging_utils - INFO - Загрузка файла 101/93250: aug1_render_00020_1.png
+2024-11-08 13:27:27,867 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00020_1.png to project 77
+2024-11-08 13:27:27,869 - utils.logging_utils - INFO - Загрузка файла 102/93250: aug1_render_00020_2.png
+2024-11-08 13:27:37,110 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00020_2.png to project 77
+2024-11-08 13:27:37,113 - utils.logging_utils - INFO - Загрузка файла 103/93250: aug1_render_00020_3.png
+2024-11-08 13:28:52,935 - utils.logging_utils - INFO - Начало удаления изображений из проекта 77
+2024-11-08 13:28:55,567 - utils.logging_utils - INFO - Удаление 100 изображений из проекта 77
+2024-11-08 13:28:58,308 - utils.logging_utils - INFO - Удалено изображение (ID: 12) из проекта 77
+2024-11-08 13:28:58,310 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:29:01,210 - utils.logging_utils - INFO - Удалено изображение (ID: 13) из проекта 77
+2024-11-08 13:29:01,211 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:29:03,957 - utils.logging_utils - INFO - Удалено изображение (ID: 14) из проекта 77
+2024-11-08 13:29:03,959 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:29:06,709 - utils.logging_utils - INFO - Удалено изображение (ID: 15) из проекта 77
+2024-11-08 13:29:06,710 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:29:09,612 - utils.logging_utils - INFO - Удалено изображение (ID: 16) из проекта 77
+2024-11-08 13:29:09,614 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77

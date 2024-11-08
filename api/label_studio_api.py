@@ -146,4 +146,17 @@ class LabelStudioAPI:
             logger.info(f"Начало удаления изображений из проекта {project_id}")
             self.delete_images(project_id, mode, count)
 
+    @retry_request
+    def get_project_images_count(self, project_id: int) -> int:
+        """Получить количество изображений в проекте"""
+        response = requests.get(
+            f"{LabelStudioSettings.URL}/tasks",
+            headers=self.headers,
+            params={"project": project_id},
+            timeout=LabelStudioSettings.TIMEOUT
+        )
+        response.raise_for_status()
+        tasks = response.json()
+        return len(tasks.get('tasks', []))
+
 

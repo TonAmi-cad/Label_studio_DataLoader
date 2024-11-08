@@ -49,7 +49,7 @@ class DirectoryProcessor:
 
     def _upload_images_from_directory(self, directory_path: str, project_id: int) -> None:
         """
-        Загрузка всех изображений из директории в проект
+        Загрузка всех изображений из иректории в проект
         
         Args:
             directory_path: путь к директории с изображениями
@@ -72,44 +72,64 @@ class DirectoryProcessor:
             logger.info(f"Загрузка файла {i}/{total_files}: {filename}")
             self.api.upload_image(project_id, file_path)
 
-    def process_directory_from_index(self, directory_path: str, start_index: int) -> None:
+    def process_directory_from_index(self, base_path: str) -> None:
         """
-        Обработка директории с изображениями, начиная с указанного индекса
+        Продолжение загрузки изображений с учетом уже загруженных
+        для всех поддиректорий в указанном пути
         
         Args:
-            directory_path: путь к директории
-            start_index: индекс, с которого начать обработку (0-based)
+            base_path: путь к корневой директории
         """
-        if not os.path.isdir(directory_path):
-            logger.error(f"Путь {directory_path} не является директорией")
+        if not os.path.isdir(base_path):
+            logger.error(f"Путь {base_path} не является директорией")
             return
             
-        folder_name = os.path.basename(directory_path)
-        logger.info(f"Обработка папки: {folder_name} начиная с индекса {start_index}")
+        # Получаем список всех поддиректорий
+        subdirs = [d for d in os.listdir(base_path) 
+                  if os.path.isdir(os.path.join(base_path, d))]
         
-        # Получаем список всех файлов и сортируем их
-        files = sorted([f for f in os.listdir(directory_path) 
-                       if os.path.isfile(os.path.join(directory_path, f))])
-        
-        if not files:
-            logger.warning("В папке не найдено файлов")
+        if not subdirs:
+            logger.warning(f"В директории {base_path} не найдено поддиректорий")
             return
             
-        if start_index >= len(files):
-            logger.error(f"Начальный индекс {start_index} превышает количество файлов в папке ({len(files)})")
-            return
+        logger.info(f"Найдены следующие поддиректории: {', '.join(subdirs)}")
+        
+        # Обрабатываем каждую поддиректорию
+        for subdir in subdirs:
+            subdir_path = os.path.join(base_path, subdir)
             
-        # Проверяем существование проекта с таким именем
-        project_id = self.api.find_project_by_name(folder_name)
-        
-        if project_id is None:
-            logger.info(f"Создание нового проекта для папки: {folder_name}")
-            project_id = self.api.create_project(folder_name, self.label_config)
-        else:
-            logger.info(f"Добавление изображений в существующий проект: {folder_name}")
-        
-        # Обрабатываем файлы начиная с указанного индекса
-        for i, filename in enumerate(files[start_index:], start=start_index):
-            file_path = os.path.join(directory_path, filename)
-            logger.info(f"Обработка файла {i+1}/{len(files)}: {filename}")
-            self.api.upload_image(project_id, file_path)
+            # Получаем список всех файлов в поддиректории
+            files = sorted([f for f in os.listdir(subdir_path) 
+                           if os.path.isfile(os.path.join(subdir_path, f))])
+            
+            if not files:
+                logger.warning(f"В директории {subdir_path} не найдено файлов")
+                continue
+                
+            # Проверяем существование проекта с таким именем
+            project_id = self.api.find_project_by_name(subdir)
+            
+            if project_id is not None:
+                # Если проект существует, получаем количество уже загруженных изображений
+                existing_images = self.api.get_project_images_count(project_id)
+                logger.info(f"В проекте {subdir} уже загружено {existing_images} изображений")
+                
+                if existing_images >= len(files):
+                    logger.info(f"Все изображения из {subdir} уже загружены (всего файлов: {len(files)})")
+                    continue
+                    
+                logger.info(f"Продолжение загрузки {subdir} с индекса {existing_images}")
+                start_index = existing_images
+            else:
+                logger.info(f"Создание нового проекта для папки: {subdir}")
+                project_id = self.api.create_project(subdir, self.label_config)
+                start_index = 0
+            
+            # Загружаем оставшиеся файлы
+            remaining_files = len(files) - start_index
+            logger.info(f"Будет загружено {remaining_files} новых изображений из {subdir}")
+            
+            for i, filename in enumerate(files[start_index:], start=start_index):
+                file_path = os.path.join(subdir_path, filename)
+                logger.info(f"Загрузка файла {i+1}/{len(files)}: {filename}")
+                self.api.upload_image(project_id, file_path)
