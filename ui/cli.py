@@ -49,3 +49,17 @@ def get_directory_info() -> Tuple[str, Optional[List[str]]]:
         logger.info(f"Selected folders for processing: {', '.join(specific_folders)}")
     else:
         logger.info("All folders in directory will be processed")
+
+def get_directory_and_start_index() -> tuple[str, int]:
+    """Получить путь к директории и начальный индекс от пользователя"""
+    directory_path = input("Введите путь к директории с изображениями: ").strip()
+    
+    while True:
+        try:
+            start_index = int(input("Введите индекс, с которого начать обработку (0 для начала): "))
+            if start_index < 0:
+                print("Индекс должен быть неотрицательным числом")
+                continue
+            return directory_path, start_index
+        except ValueError:
+            print("Пожалуйста, введите корректное число")

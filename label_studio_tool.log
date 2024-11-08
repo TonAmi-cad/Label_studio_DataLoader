@@ -1,0 +1,15 @@
+2024-11-08 12:29:47,731 - utils.logging_utils - INFO - Обработка папки: img начиная с индекса 51038
+2024-11-08 12:29:47,734 - utils.logging_utils - WARNING - В папке не найдено файлов
+2024-11-08 12:29:47,735 - utils.logging_utils - INFO - Processing completed successfully
+2024-11-08 12:36:18,846 - utils.logging_utils - INFO - Обработка папки: img начиная с индекса 51038
+2024-11-08 12:36:18,848 - utils.logging_utils - WARNING - В папке не найдено файлов
+2024-11-08 12:36:18,849 - utils.logging_utils - INFO - Processing completed successfully
+2024-11-08 12:42:09,595 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 12:42:12,177 - utils.logging_utils - ERROR - Произошла ошибка: string indices must be integers
+2024-11-08 12:43:31,145 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 12:43:33,626 - utils.logging_utils - INFO - Найден существующий проект: augmented_images (ID: 77)
+2024-11-08 12:43:33,627 - utils.logging_utils - INFO - Найден существующий проект: augmented_images (ID: 77)
+2024-11-08 12:44:40,052 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 77
+2024-11-08 12:44:40,054 - utils.logging_utils - INFO - Загрузка файла 1/93250: aug1_render_00000_1.png
+2024-11-08 12:44:50,351 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_1.png to project 77
+2024-11-08 12:44:50,353 - utils.logging_utils - INFO - Загрузка файла 2/93250: aug1_render_00000_2.png

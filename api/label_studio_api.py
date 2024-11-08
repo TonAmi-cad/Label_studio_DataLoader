@@ -1,6 +1,6 @@
 """API client for Label Studio"""
 import requests
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from config.settings import LabelStudioSettings
 from utils.retry_utils import retry_request
 from utils.logging_utils import logger
@@ -44,3 +44,28 @@ class LabelStudioAPI:
             )
             response.raise_for_status()
             logger.info(f"Uploaded image {image_path} to project {project_id}")
+
+    @retry_request
+    def get_projects(self) -> list:
+        """Получить список всех проектов"""
+        response = requests.get(
+            f"{LabelStudioSettings.URL}/projects",
+            headers=self.headers,
+            timeout=LabelStudioSettings.TIMEOUT
+        )
+        response.raise_for_status()
+        return response.json()['results']
+
+    def find_project_by_name(self, project_name: str) -> Optional[int]:
+        """Найти проект по имени"""
+        try:
+            projects = self.get_projects()
+            for project in projects:
+                if isinstance(project, dict) and project.get('title') == project_name:
+                    logger.info(f"Найден существующий проект: {project_name} (ID: {project['id']})")
+                    return project['id']
+            logger.info(f"Проект с именем {project_name} не найден")
+            return None
+        except Exception as e:
+            logger.error(f"Ошибка при поиске проекта: {e}")
+            return None
