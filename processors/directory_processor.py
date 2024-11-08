@@ -44,33 +44,23 @@ class DirectoryProcessor:
             else:
                 logger.info(f"Найден существующий проект: {subdir} (ID: {project_id})")
             
-            # Загружаем все изображения из поддиректории в проект
-            self._upload_images_from_directory(subdir_path, project_id)
-
-    def _upload_images_from_directory(self, directory_path: str, project_id: int) -> None:
-        """
-        Загрузка всех изображений из иректории в проект
-        
-        Args:
-            directory_path: путь к директории с изображениями
-            project_id: ID проекта в Label Studio
-        """
-        # Получаем список всех файлов в директории
-        files = sorted([f for f in os.listdir(directory_path) 
-                       if os.path.isfile(os.path.join(directory_path, f))])
-        
-        if not files:
-            logger.warning(f"В директории {directory_path} не найдено файлов")
-            return
+            # Формируем список путей к файлам для пакетной загрузки
+            files = [f for f in os.listdir(subdir_path) 
+                     if os.path.isfile(os.path.join(subdir_path, f))]
+            file_paths = [os.path.join(subdir_path, f) for f in sorted(files)]
             
-        total_files = len(files)
-        logger.info(f"Найдено {total_files} файлов для загрузки в проект {project_id}")
-        
-        # Загружаем каждый файл
-        for i, filename in enumerate(files, 1):
-            file_path = os.path.join(directory_path, filename)
-            logger.info(f"Загрузка файла {i}/{total_files}: {filename}")
-            self.api.upload_image(project_id, file_path)
+            if not file_paths:
+                logger.warning(f"В директории {subdir_path} не найдено файлов")
+                continue
+                
+            logger.info(f"Найдено {len(file_paths)} файлов для загрузки в проект {project_id}")
+            self._upload_images_batch(file_paths, project_id)
+
+    def _upload_images_batch(self, file_paths: List[str], project_id: int) -> None:
+        """Пакетная загрузка изображений"""
+        total_files = len(file_paths)
+        logger.info(f"Начало загрузки {total_files} изображений")
+        self.api.upload_image_batch(project_id, file_paths)
 
     def process_directory_from_index(self, base_path: str) -> None:
         """
@@ -125,11 +115,11 @@ class DirectoryProcessor:
                 project_id = self.api.create_project(subdir, self.label_config)
                 start_index = 0
             
-            # Загружаем оставшиеся файлы
-            remaining_files = len(files) - start_index
-            logger.info(f"Будет загружено {remaining_files} новых изображений из {subdir}")
+            # Формируем список путей к файлам для пакетной загрузки
+            files_to_upload = [
+                os.path.join(subdir_path, filename)
+                for filename in files[start_index:]
+            ]
             
-            for i, filename in enumerate(files[start_index:], start=start_index):
-                file_path = os.path.join(subdir_path, filename)
-                logger.info(f"Загрузка файла {i+1}/{len(files)}: {filename}")
-                self.api.upload_image(project_id, file_path)
+            # Загружаем файлы батчами
+            self._upload_images_batch(files_to_upload, project_id)

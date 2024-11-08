@@ -1,9 +1,63 @@
 """API client for Label Studio"""
 import requests
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from config.settings import LabelStudioSettings
 from utils.retry_utils import retry_request
 from utils.logging_utils import logger
+import os
+import base64
+import threading
+from queue import Queue
+import time
+import random
+
+class UploadWorker(threading.Thread):
+    def __init__(self, queue: Queue, api, project_id: int, worker_id: int):
+        super().__init__()
+        self.queue = queue
+        self.api = api
+        self.project_id = project_id
+        self.worker_id = worker_id
+        self.failed_files = []
+        self.daemon = True
+
+    def run(self):
+        while True:
+            try:
+                file_path = self.queue.get(block=False)
+            except Queue.Empty:
+                break
+
+            success = False
+            retries = 0
+            
+            while not success and retries < LabelStudioSettings.MAX_RETRIES:
+                try:
+                    time.sleep(random.uniform(
+                        LabelStudioSettings.UPLOAD_MIN_DELAY,
+                        LabelStudioSettings.UPLOAD_MAX_DELAY
+                    ))
+                    with open(file_path, 'rb') as f:
+                        files = {'file': (os.path.basename(file_path), f, 'image/png')}
+                        response = requests.post(
+                            f"{LabelStudioSettings.URL}/projects/{self.project_id}/import",
+                            headers=self.api.headers,
+                            files=files,
+                            timeout=LabelStudioSettings.TIMEOUT
+                        )
+                        response.raise_for_status()
+                        logger.info(f"Worker {self.worker_id}: Загружен файл {os.path.basename(file_path)}")
+                        success = True
+                except Exception as e:
+                    retries += 1
+                    logger.error(f"Worker {self.worker_id}: Ошибка при загрузке {file_path}: {e}. Попытка {retries}")
+                    if retries < LabelStudioSettings.MAX_RETRIES:
+                        time.sleep(LabelStudioSettings.RETRY_DELAY * retries)
+                
+                if not success:
+                    self.failed_files.append(file_path)
+                
+                self.queue.task_done()
 
 class LabelStudioAPI:
     """Class for working with Label Studio API"""
@@ -143,7 +197,7 @@ class LabelStudioAPI:
             count: количество изображений для удаления
         """
         for project_id in project_ids:
-            logger.info(f"Начало удаления изображений из проекта {project_id}")
+            logger.info(f"Начало удаления изображений из проект {project_id}")
             self.delete_images(project_id, mode, count)
 
     @retry_request
@@ -158,5 +212,38 @@ class LabelStudioAPI:
         response.raise_for_status()
         tasks = response.json()
         return len(tasks.get('tasks', []))
+
+    @retry_request
+    def upload_image_batch(self, project_id: int, file_paths: List[str]) -> None:
+        """Многопоточная загрузка изображений"""
+        file_queue = Queue()
+        workers = []
+        
+        # Заполняем очередь файлами
+        for file_path in file_paths:
+            file_queue.put(file_path)
+        
+        logger.info(f"Начало загрузки {len(file_paths)} файлов в {LabelStudioSettings.NUM_WORKERS} потоков")
+        
+        # Создаем и запускаем рабочие потоки
+        for i in range(LabelStudioSettings.NUM_WORKERS):
+            worker = UploadWorker(file_queue, self, project_id, i+1)
+            workers.append(worker)
+            worker.start()
+            time.sleep(LabelStudioSettings.WORKER_START_DELAY)
+        
+        # Ожидаем завершения очереди
+        file_queue.join()
+        
+        # Собираем информацию о неудачных загрузках
+        failed_files = []
+        for worker in workers:
+            failed_files.extend(worker.failed_files)
+        
+        if failed_files:
+            logger.warning(f"Не удалось загрузить {len(failed_files)} файлов")
+            if len(failed_files) < len(file_paths):
+                logger.info("Повторная попытка загрузки неудачных файлов...")
+                self.upload_image_batch(project_id, failed_files)
 
 

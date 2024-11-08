@@ -76,3 +76,424 @@
 2024-11-08 13:29:06,710 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
 2024-11-08 13:29:09,612 - utils.logging_utils - INFO - Удалено изображение (ID: 16) из проекта 77
 2024-11-08 13:29:09,614 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:35:43,445 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:35:45,637 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 13:35:45,638 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 13:35:48,622 - utils.logging_utils - INFO - Created project augmented_images with ID: 78
+2024-11-08 13:36:07,420 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 78
+2024-11-08 13:36:07,421 - utils.logging_utils - INFO - Загрузка файла 1/93250: aug1_render_00000_1.png
+2024-11-08 13:36:11,122 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_1.png to project 78
+2024-11-08 13:36:11,124 - utils.logging_utils - INFO - Загрузка файла 2/93250: aug1_render_00000_2.png
+2024-11-08 13:36:16,131 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_2.png to project 78
+2024-11-08 13:36:16,134 - utils.logging_utils - INFO - Загрузка файла 3/93250: aug1_render_00000_3.png
+2024-11-08 13:39:20,123 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:39:22,306 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 13:39:22,307 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 13:39:25,046 - utils.logging_utils - INFO - Created project augmented_images with ID: 79
+2024-11-08 13:39:42,338 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 79
+2024-11-08 13:39:42,339 - utils.logging_utils - INFO - Загрузка файла 1/93250: aug1_render_00000_1.png
+2024-11-08 13:39:45,800 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_1.png to project 79
+2024-11-08 13:39:45,803 - utils.logging_utils - INFO - Загрузка файла 2/93250: aug1_render_00000_2.png
+2024-11-08 13:39:49,504 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_2.png to project 79
+2024-11-08 13:39:49,506 - utils.logging_utils - INFO - Загрузка файла 3/93250: aug1_render_00000_3.png
+2024-11-08 13:39:53,252 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_3.png to project 79
+2024-11-08 13:39:53,254 - utils.logging_utils - INFO - Загрузка файла 4/93250: aug1_render_00000_4.png
+2024-11-08 13:39:57,157 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_4.png to project 79
+2024-11-08 13:39:57,159 - utils.logging_utils - INFO - Загрузка файла 5/93250: aug1_render_00000_5.png
+2024-11-08 13:40:00,743 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_5.png to project 79
+2024-11-08 13:40:00,745 - utils.logging_utils - INFO - Загрузка файла 6/93250: aug1_render_00001_1.png
+2024-11-08 13:40:04,705 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00001_1.png to project 79
+2024-11-08 13:40:04,708 - utils.logging_utils - INFO - Загрузка файла 7/93250: aug1_render_00001_2.png
+2024-11-08 13:53:09,977 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:53:09,979 - utils.logging_utils - ERROR - Ошибка при поиске проекта: type object 'LabelStudioSettings' has no attribute 'RETRIES'
+2024-11-08 13:53:09,979 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 13:53:09,980 - utils.logging_utils - ERROR - Произошла ошибка: type object 'LabelStudioSettings' has no attribute 'RETRIES'
+2024-11-08 13:54:43,321 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:54:45,793 - utils.logging_utils - ERROR - Error: 401 Client Error: Unauthorized for url: http://localhost:8080/api/projects. Attempt 1 of 3
+2024-11-08 13:54:45,794 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 13:54:48,907 - utils.logging_utils - ERROR - Error: 401 Client Error: Unauthorized for url: http://localhost:8080/api/projects. Attempt 2 of 3
+2024-11-08 13:54:48,908 - utils.logging_utils - INFO - Retrying in 2 seconds
+2024-11-08 13:56:55,710 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 13:56:57,882 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 13:56:57,884 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 13:57:00,744 - utils.logging_utils - INFO - Created project augmented_images with ID: 80
+2024-11-08 13:57:18,065 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 80
+2024-11-08 13:57:18,066 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 13:57:21,340 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 13:57:23,947 - utils.logging_utils - ERROR - Error: 404 Client Error: Not Found for url: http://localhost:8080/api/tasks/bulk. Attempt 1 of 3
+2024-11-08 13:57:23,948 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 13:57:25,137 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 13:57:27,454 - utils.logging_utils - ERROR - Error: 404 Client Error: Not Found for url: http://localhost:8080/api/tasks/bulk. Attempt 2 of 3
+2024-11-08 13:57:27,454 - utils.logging_utils - INFO - Retrying in 2 seconds
+2024-11-08 13:57:29,626 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 14:00:04,107 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:00:06,414 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:00:06,415 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:00:09,227 - utils.logging_utils - INFO - Created project augmented_images with ID: 81
+2024-11-08 14:00:27,300 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 81
+2024-11-08 14:00:27,301 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:00:27,330 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 14:00:27,332 - utils.logging_utils - ERROR - Error: read of closed file. Attempt 1 of 3
+2024-11-08 14:00:27,332 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 14:00:28,370 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 14:00:28,373 - utils.logging_utils - ERROR - Error: read of closed file. Attempt 2 of 3
+2024-11-08 14:00:28,374 - utils.logging_utils - INFO - Retrying in 2 seconds
+2024-11-08 14:00:30,410 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 14:00:30,412 - utils.logging_utils - ERROR - Error: read of closed file. Attempt 3 of 3
+2024-11-08 14:00:30,414 - utils.logging_utils - ERROR - Произошла ошибка: read of closed file
+2024-11-08 14:01:59,145 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:02:01,307 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:02:01,309 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:02:04,162 - utils.logging_utils - INFO - Created project augmented_images with ID: 82
+2024-11-08 14:02:23,623 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 82
+2024-11-08 14:02:23,624 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:02:23,648 - utils.logging_utils - INFO - Загрузка батча 1/933 (всего файлов в батче: 100)
+2024-11-08 14:02:28,130 - utils.logging_utils - INFO - Успешно загружен батч 1
+2024-11-08 14:02:31,233 - utils.logging_utils - INFO - Загрузка батча 2/933 (всего файлов в батче: 100)
+2024-11-08 14:02:35,508 - utils.logging_utils - INFO - Успешно загружен батч 2
+2024-11-08 14:02:39,611 - utils.logging_utils - INFO - Загрузка батча 3/933 (всего файлов в батче: 100)
+2024-11-08 14:02:44,531 - utils.logging_utils - INFO - Успешно загружен батч 3
+2024-11-08 14:02:49,995 - utils.logging_utils - INFO - Загрузка батча 4/933 (всего файлов в батче: 100)
+2024-11-08 14:02:55,254 - utils.logging_utils - INFO - Успешно загружен батч 4
+2024-11-08 14:02:58,666 - utils.logging_utils - INFO - Загрузка батча 5/933 (всего файлов в батче: 100)
+2024-11-08 14:03:03,561 - utils.logging_utils - INFO - Успешно загружен батч 5
+2024-11-08 14:08:04,015 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:08:06,193 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:08:06,194 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:08:09,054 - utils.logging_utils - INFO - Created project augmented_images with ID: 83
+2024-11-08 14:08:27,438 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 83
+2024-11-08 14:08:27,439 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:08:27,440 - utils.logging_utils - INFO - Загрузка файла aug1_render_00000_1.png
+2024-11-08 14:08:31,343 - utils.logging_utils - INFO - Загрузка файла aug1_render_00000_2.png
+2024-11-08 14:08:35,271 - utils.logging_utils - INFO - Загрузка файла aug1_render_00000_3.png
+2024-11-08 14:14:23,698 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:14:25,867 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:14:25,870 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:14:28,807 - utils.logging_utils - INFO - Created project augmented_images with ID: 84
+2024-11-08 14:14:46,587 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 84
+2024-11-08 14:14:46,588 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:14:46,787 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:14:46,788 - utils.logging_utils - ERROR - Error: cannot join thread before it is started. Attempt 1 of 3
+2024-11-08 14:14:46,789 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 14:14:48,021 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:14:48,022 - utils.logging_utils - ERROR - Error: cannot join thread before it is started. Attempt 2 of 3
+2024-11-08 14:14:48,023 - utils.logging_utils - INFO - Retrying in 2 seconds
+2024-11-08 14:14:50,234 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:14:50,235 - utils.logging_utils - ERROR - Error: cannot join thread before it is started. Attempt 3 of 3
+2024-11-08 14:14:50,236 - utils.logging_utils - ERROR - Произошла ошибка: cannot join thread before it is started
+2024-11-08 14:16:23,527 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:16:25,711 - utils.logging_utils - INFO - Проект с именем augmented_images не найден
+2024-11-08 14:16:25,712 - utils.logging_utils - INFO - Создание нового проекта: augmented_images
+2024-11-08 14:16:28,615 - utils.logging_utils - INFO - Created project augmented_images with ID: 85
+2024-11-08 14:16:47,073 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 85
+2024-11-08 14:16:47,074 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:16:47,272 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:16:47,273 - utils.logging_utils - ERROR - Error: name 'UploadWorker' is not defined. Attempt 1 of 3
+2024-11-08 14:16:47,273 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 14:16:48,460 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:16:48,461 - utils.logging_utils - ERROR - Error: name 'UploadWorker' is not defined. Attempt 2 of 3
+2024-11-08 14:16:48,461 - utils.logging_utils - INFO - Retrying in 2 seconds
+2024-11-08 14:16:50,655 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:16:50,656 - utils.logging_utils - ERROR - Error: name 'UploadWorker' is not defined. Attempt 3 of 3
+2024-11-08 14:16:50,658 - utils.logging_utils - ERROR - Произошла ошибка: name 'UploadWorker' is not defined
+2024-11-08 14:18:30,521 - utils.logging_utils - INFO - Найдены следующие поддиректории: augmented_images, original_images
+2024-11-08 14:18:32,696 - utils.logging_utils - INFO - Найден существующий проект: augmented_images (ID: 85)
+2024-11-08 14:18:32,698 - utils.logging_utils - INFO - Найден существующий проект: augmented_images (ID: 85)
+2024-11-08 14:18:50,730 - utils.logging_utils - INFO - Найдено 93250 файлов для загрузки в проект 85
+2024-11-08 14:18:50,731 - utils.logging_utils - INFO - Начало загрузки 93250 изображений
+2024-11-08 14:18:50,935 - utils.logging_utils - INFO - Начало загрузки 93250 файлов в 5 потоков
+2024-11-08 14:18:55,083 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00000_1.png
+2024-11-08 14:18:58,328 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00000_5.png
+2024-11-08 14:18:58,714 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00000_4.png
+2024-11-08 14:19:00,156 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00000_3.png
+2024-11-08 14:19:02,021 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00001_2.png
+2024-11-08 14:19:03,989 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00001_1.png
+2024-11-08 14:19:05,503 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00001_4.png
+2024-11-08 14:19:06,627 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00001_3.png
+2024-11-08 14:19:08,741 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00001_5.png
+2024-11-08 14:19:10,494 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00002_1.png
+2024-11-08 14:19:12,054 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00002_3.png
+2024-11-08 14:19:13,978 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00002_4.png
+2024-11-08 14:19:16,217 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00002_5.png
+2024-11-08 14:19:17,533 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00003_1.png
+2024-11-08 14:19:19,334 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00000_2.png
+2024-11-08 14:19:21,274 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00003_3.png
+2024-11-08 14:19:23,399 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00003_2.png
+2024-11-08 14:19:24,946 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00004_1.png
+2024-11-08 14:19:26,066 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00003_4.png
+2024-11-08 14:19:27,066 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00003_5.png
+2024-11-08 14:19:28,358 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00004_2.png
+2024-11-08 14:19:30,118 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00004_3.png
+2024-11-08 14:19:31,725 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00004_4.png
+2024-11-08 14:19:33,095 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00005_1.png
+2024-11-08 14:19:34,504 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00005_2.png
+2024-11-08 14:19:35,536 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00004_5.png
+2024-11-08 14:19:37,830 - utils.logging_utils - ERROR - Worker 3: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00002_2.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:19:37,943 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00005_3.png
+2024-11-08 14:19:39,776 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00005_5.png
+2024-11-08 14:19:40,715 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00006_1.png
+2024-11-08 14:19:42,569 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00005_4.png
+2024-11-08 14:19:43,988 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00006_3.png
+2024-11-08 14:19:45,798 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00006_2.png
+2024-11-08 14:19:47,404 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00006_5.png
+2024-11-08 14:19:48,961 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00006_4.png
+2024-11-08 14:19:50,350 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00007_2.png
+2024-11-08 14:19:51,773 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00007_3.png
+2024-11-08 14:19:53,493 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00007_4.png
+2024-11-08 14:19:54,886 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00007_5.png
+2024-11-08 14:19:57,914 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00008_2.png
+2024-11-08 14:19:59,407 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00008_1.png
+2024-11-08 14:20:01,918 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00008_4.png
+2024-11-08 14:20:03,749 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00008_5.png
+2024-11-08 14:20:06,042 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00009_1.png
+2024-11-08 14:20:07,620 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00002_2.png
+2024-11-08 14:20:08,626 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00008_3.png
+2024-11-08 14:20:10,380 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00009_3.png
+2024-11-08 14:20:11,443 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00009_2.png
+2024-11-08 14:20:13,314 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00009_4.png
+2024-11-08 14:20:15,317 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00010_1.png
+2024-11-08 14:20:16,518 - utils.logging_utils - ERROR - Worker 1: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00007_1.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:20:17,394 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00009_5.png
+2024-11-08 14:20:19,349 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00010_4.png
+2024-11-08 14:20:20,662 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00010_3.png
+2024-11-08 14:20:22,750 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00007_1.png
+2024-11-08 14:20:24,663 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00011_1.png
+2024-11-08 14:20:26,016 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00010_5.png
+2024-11-08 14:20:27,250 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00010_2.png
+2024-11-08 14:20:29,189 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00011_2.png
+2024-11-08 14:20:31,555 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00011_5.png
+2024-11-08 14:20:32,766 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00011_3.png
+2024-11-08 14:20:34,417 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00012_2.png
+2024-11-08 14:20:35,881 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00012_1.png
+2024-11-08 14:20:37,431 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00012_4.png
+2024-11-08 14:20:39,102 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00011_4.png
+2024-11-08 14:20:40,733 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00013_1.png
+2024-11-08 14:20:42,390 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00012_5.png
+2024-11-08 14:20:44,046 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00013_3.png
+2024-11-08 14:20:45,898 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00012_3.png
+2024-11-08 14:20:47,358 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00013_5.png
+2024-11-08 14:20:49,084 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00013_4.png
+2024-11-08 14:20:51,027 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00014_2.png
+2024-11-08 14:20:52,730 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00014_1.png
+2024-11-08 14:20:54,972 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00014_5.png
+2024-11-08 14:20:56,814 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00015_1.png
+2024-11-08 14:20:58,048 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00014_3.png
+2024-11-08 14:20:59,611 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00015_2.png
+2024-11-08 14:21:01,349 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00015_3.png
+2024-11-08 14:21:02,887 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00015_4.png
+2024-11-08 14:21:04,475 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00013_2.png
+2024-11-08 14:21:06,239 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00016_1.png
+2024-11-08 14:21:07,587 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00015_5.png
+2024-11-08 14:21:08,974 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00016_3.png
+2024-11-08 14:21:10,481 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00016_4.png
+2024-11-08 14:21:12,141 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00016_5.png
+2024-11-08 14:21:13,712 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00017_1.png
+2024-11-08 14:21:15,225 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00017_2.png
+2024-11-08 14:21:17,035 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00016_2.png
+2024-11-08 14:21:18,695 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00017_4.png
+2024-11-08 14:21:20,265 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00017_3.png
+2024-11-08 14:21:21,570 - utils.logging_utils - ERROR - Worker 5: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00014_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:21:21,907 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00018_1.png
+2024-11-08 14:21:23,481 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00018_2.png
+2024-11-08 14:21:24,990 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00018_3.png
+2024-11-08 14:21:27,461 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00018_5.png
+2024-11-08 14:21:28,884 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00019_1.png
+2024-11-08 14:21:30,025 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00018_4.png
+2024-11-08 14:21:31,804 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00019_2.png
+2024-11-08 14:21:33,365 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00019_3.png
+2024-11-08 14:21:34,837 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00019_4.png
+2024-11-08 14:21:36,559 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00019_5.png
+2024-11-08 14:21:38,046 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00020_1.png
+2024-11-08 14:21:39,577 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00020_2.png
+2024-11-08 14:21:43,024 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00017_5.png
+2024-11-08 14:21:44,642 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00020_3.png
+2024-11-08 14:21:45,946 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00020_4.png
+2024-11-08 14:21:47,792 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00021_1.png
+2024-11-08 14:21:49,198 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00014_4.png
+2024-11-08 14:21:50,603 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00021_3.png
+2024-11-08 14:21:52,167 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00021_4.png
+2024-11-08 14:21:53,676 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00021_5.png
+2024-11-08 14:21:55,251 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00022_1.png
+2024-11-08 14:21:56,747 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00022_2.png
+2024-11-08 14:21:58,502 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00022_3.png
+2024-11-08 14:21:59,810 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00022_4.png
+2024-11-08 14:22:01,275 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00022_5.png
+2024-11-08 14:22:02,525 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00023_1.png
+2024-11-08 14:22:04,057 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00023_2.png
+2024-11-08 14:22:05,352 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00023_3.png
+2024-11-08 14:22:06,683 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00020_5.png
+2024-11-08 14:22:07,999 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00023_5.png
+2024-11-08 14:22:09,514 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00024_1.png
+2024-11-08 14:22:10,447 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00021_2.png
+2024-11-08 14:22:12,028 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00024_2.png
+2024-11-08 14:22:13,380 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00024_4.png
+2024-11-08 14:22:14,972 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00024_5.png
+2024-11-08 14:22:16,312 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00025_1.png
+2024-11-08 14:22:17,576 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00025_2.png
+2024-11-08 14:22:18,852 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00025_3.png
+2024-11-08 14:22:20,502 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00025_4.png
+2024-11-08 14:22:22,057 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00025_5.png
+2024-11-08 14:22:23,598 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00026_1.png
+2024-11-08 14:22:25,184 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00026_2.png
+2024-11-08 14:22:26,572 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00026_3.png
+2024-11-08 14:22:27,990 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00026_4.png
+2024-11-08 14:22:29,490 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00026_5.png
+2024-11-08 14:22:31,108 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00027_1.png
+2024-11-08 14:22:32,505 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00027_2.png
+2024-11-08 14:22:33,896 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00027_3.png
+2024-11-08 14:22:34,838 - utils.logging_utils - ERROR - Worker 5: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00023_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:22:35,350 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00027_4.png
+2024-11-08 14:22:36,684 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00027_5.png
+2024-11-08 14:22:37,965 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00028_1.png
+2024-11-08 14:22:39,641 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00023_4.png
+2024-11-08 14:22:40,502 - utils.logging_utils - ERROR - Worker 4: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00024_3.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:22:41,321 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00028_3.png
+2024-11-08 14:22:42,843 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00028_2.png
+2024-11-08 14:22:44,362 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00028_5.png
+2024-11-08 14:22:46,451 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00029_1.png
+2024-11-08 14:22:47,972 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00029_2.png
+2024-11-08 14:22:49,242 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00029_3.png
+2024-11-08 14:22:50,437 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00029_4.png
+2024-11-08 14:22:51,977 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00029_5.png
+2024-11-08 14:22:53,313 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00030_1.png
+2024-11-08 14:22:54,845 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00030_2.png
+2024-11-08 14:22:56,244 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00030_3.png
+2024-11-08 14:22:57,709 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00030_4.png
+2024-11-08 14:23:00,603 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00031_1.png
+2024-11-08 14:23:02,037 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00031_2.png
+2024-11-08 14:23:04,578 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00031_3.png
+2024-11-08 14:23:05,990 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00031_4.png
+2024-11-08 14:23:07,799 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00024_3.png
+2024-11-08 14:23:09,350 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00030_5.png
+2024-11-08 14:23:10,194 - utils.logging_utils - ERROR - Worker 3: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00028_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:23:10,768 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00031_5.png
+2024-11-08 14:23:12,160 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00032_2.png
+2024-11-08 14:23:13,890 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00032_3.png
+2024-11-08 14:23:15,965 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00032_5.png
+2024-11-08 14:23:17,660 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00033_1.png
+2024-11-08 14:23:18,940 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00028_4.png
+2024-11-08 14:23:19,911 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00032_1.png
+2024-11-08 14:23:21,541 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00033_3.png
+2024-11-08 14:23:22,879 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00033_4.png
+2024-11-08 14:23:24,644 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00033_2.png
+2024-11-08 14:23:26,091 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00034_1.png
+2024-11-08 14:23:27,493 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00034_2.png
+2024-11-08 14:23:29,053 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00034_3.png
+2024-11-08 14:23:30,494 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00034_4.png
+2024-11-08 14:23:33,206 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00034_5.png
+2024-11-08 14:23:34,886 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00035_2.png
+2024-11-08 14:23:36,824 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00035_3.png
+2024-11-08 14:23:37,912 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00032_4.png
+2024-11-08 14:23:39,492 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00035_4.png
+2024-11-08 14:23:40,966 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00035_5.png
+2024-11-08 14:23:42,389 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00036_1.png
+2024-11-08 14:23:43,850 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00036_2.png
+2024-11-08 14:23:45,593 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00036_3.png
+2024-11-08 14:23:47,137 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00036_4.png
+2024-11-08 14:23:48,631 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00036_5.png
+2024-11-08 14:23:50,078 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00037_1.png
+2024-11-08 14:23:51,678 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00037_2.png
+2024-11-08 14:23:52,198 - utils.logging_utils - ERROR - Worker 5: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00033_5.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:23:53,172 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00037_3.png
+2024-11-08 14:23:54,565 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00037_4.png
+2024-11-08 14:23:56,320 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00037_5.png
+2024-11-08 14:23:58,968 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00038_2.png
+2024-11-08 14:24:00,448 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00038_3.png
+2024-11-08 14:24:01,452 - utils.logging_utils - ERROR - Worker 4: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00035_1.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:24:01,728 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00033_5.png
+2024-11-08 14:24:03,071 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00038_4.png
+2024-11-08 14:24:04,415 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00038_5.png
+2024-11-08 14:24:06,661 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00035_1.png
+2024-11-08 14:24:08,842 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00039_3.png
+2024-11-08 14:24:10,464 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00039_4.png
+2024-11-08 14:24:11,526 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00039_2.png
+2024-11-08 14:24:13,315 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00039_5.png
+2024-11-08 14:24:14,803 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00040_1.png
+2024-11-08 14:24:16,186 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00039_1.png
+2024-11-08 14:24:20,158 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00040_4.png
+2024-11-08 14:24:21,400 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00040_3.png
+2024-11-08 14:24:24,189 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00041_1.png
+2024-11-08 14:24:25,423 - utils.logging_utils - ERROR - Worker 1: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00038_1.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:24:25,726 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00041_2.png
+2024-11-08 14:24:26,922 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00040_2.png
+2024-11-08 14:24:28,627 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00041_3.png
+2024-11-08 14:24:31,087 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00041_5.png
+2024-11-08 14:24:32,735 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00042_1.png
+2024-11-08 14:24:33,870 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00038_1.png
+2024-11-08 14:24:35,445 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00042_2.png
+2024-11-08 14:24:36,838 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00042_3.png
+2024-11-08 14:24:38,256 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00042_4.png
+2024-11-08 14:24:39,863 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00041_4.png
+2024-11-08 14:24:41,246 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00043_1.png
+2024-11-08 14:24:42,637 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00040_5.png
+2024-11-08 14:24:44,000 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00043_3.png
+2024-11-08 14:24:45,543 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00043_4.png
+2024-11-08 14:24:46,727 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00043_5.png
+2024-11-08 14:24:47,926 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00044_1.png
+2024-11-08 14:24:49,308 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00044_2.png
+2024-11-08 14:24:50,929 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00044_3.png
+2024-11-08 14:24:52,272 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00044_4.png
+2024-11-08 14:24:53,713 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00044_5.png
+2024-11-08 14:24:55,247 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00045_1.png
+2024-11-08 14:24:56,617 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00045_2.png
+2024-11-08 14:24:57,873 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00045_3.png
+2024-11-08 14:24:59,331 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00045_4.png
+2024-11-08 14:25:00,769 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00045_5.png
+2024-11-08 14:25:02,624 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00042_5.png
+2024-11-08 14:25:04,063 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00046_2.png
+2024-11-08 14:25:05,523 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00046_3.png
+2024-11-08 14:25:07,263 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00046_4.png
+2024-11-08 14:25:09,318 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00046_5.png
+2024-11-08 14:25:10,719 - utils.logging_utils - ERROR - Worker 1: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00043_2.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:25:11,630 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00047_2.png
+2024-11-08 14:25:13,235 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00046_1.png
+2024-11-08 14:25:15,755 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00047_3.png
+2024-11-08 14:25:17,941 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00047_5.png
+2024-11-08 14:25:19,872 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00048_1.png
+2024-11-08 14:25:21,206 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00043_2.png
+2024-11-08 14:25:22,587 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00048_2.png
+2024-11-08 14:25:24,714 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00048_3.png
+2024-11-08 14:25:26,254 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00048_4.png
+2024-11-08 14:25:27,703 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00048_5.png
+2024-11-08 14:25:29,252 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00049_1.png
+2024-11-08 14:25:30,801 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00049_2.png
+2024-11-08 14:25:32,476 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00049_3.png
+2024-11-08 14:25:34,038 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00049_4.png
+2024-11-08 14:25:36,015 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00049_5.png
+2024-11-08 14:25:37,651 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00050_1.png
+2024-11-08 14:25:38,061 - utils.logging_utils - ERROR - Worker 2: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00047_1.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:25:39,285 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00050_2.png
+2024-11-08 14:25:40,992 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00050_3.png
+2024-11-08 14:25:43,893 - utils.logging_utils - ERROR - Worker 3: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00047_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:25:43,943 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00050_5.png
+2024-11-08 14:25:45,484 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00051_1.png
+2024-11-08 14:25:46,753 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00047_1.png
+2024-11-08 14:25:48,670 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00051_2.png
+2024-11-08 14:25:50,097 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00051_3.png
+2024-11-08 14:25:51,619 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00051_4.png
+2024-11-08 14:25:53,263 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00051_5.png
+2024-11-08 14:25:54,870 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00052_1.png
+2024-11-08 14:25:56,339 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00052_2.png
+2024-11-08 14:25:58,334 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00052_3.png
+2024-11-08 14:25:59,797 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00052_4.png
+2024-11-08 14:26:01,239 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00052_5.png
+2024-11-08 14:26:02,726 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00053_1.png
+2024-11-08 14:26:04,261 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00053_2.png
+2024-11-08 14:26:05,632 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00053_3.png
+2024-11-08 14:26:06,860 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00053_4.png
+2024-11-08 14:26:08,186 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00053_5.png
+2024-11-08 14:26:09,758 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00054_1.png
+2024-11-08 14:26:10,126 - utils.logging_utils - ERROR - Worker 4: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00050_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 1
+2024-11-08 14:26:11,267 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00054_2.png
+2024-11-08 14:26:12,626 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00054_3.png
+2024-11-08 14:26:14,019 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00054_4.png
+2024-11-08 14:26:16,444 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00054_5.png
+2024-11-08 14:26:17,154 - utils.logging_utils - ERROR - Worker 3: Ошибка при загрузке D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00047_4.png: HTTPConnectionPool(host='localhost', port=8080): Read timed out. (read timeout=30). Попытка 2
+2024-11-08 14:26:18,665 - utils.logging_utils - INFO - Worker 2: Загружен файл aug1_render_00055_2.png
+2024-11-08 14:26:20,405 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00055_3.png
+2024-11-08 14:26:21,354 - utils.logging_utils - INFO - Worker 1: Загружен файл aug1_render_00055_1.png
+2024-11-08 14:26:23,015 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00047_4.png
+2024-11-08 14:26:24,445 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00055_5.png
+2024-11-08 14:26:25,863 - utils.logging_utils - INFO - Worker 4: Загружен файл aug1_render_00050_4.png
+2024-11-08 14:26:27,166 - utils.logging_utils - INFO - Worker 3: Загружен файл aug1_render_00056_2.png
+2024-11-08 14:26:28,609 - utils.logging_utils - INFO - Worker 5: Загружен файл aug1_render_00056_3.png
