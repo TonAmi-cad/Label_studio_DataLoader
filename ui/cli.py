@@ -63,3 +63,72 @@ def get_directory_and_start_index() -> tuple[str, int]:
             return directory_path, start_index
         except ValueError:
             print("Пожалуйста, введите корректное число")
+
+def display_projects(projects: list) -> None:
+    """Отображение списка проектов"""
+    print("\nСписок доступных проектов:")
+    print("-" * 50)
+    for i, project in enumerate(projects, 1):
+        print(f"{i}. {project['title']} (ID: {project['id']})")
+    print("-" * 50)
+
+def get_projects_for_deletion(projects: list) -> list[int]:
+    """Получить список проектов для удаления"""
+    display_projects(projects)
+    
+    print("\nВыберите проекты для удаления:")
+    print("1. Все проекты")
+    print("2. Выбрать конкретные проекты")
+    
+    choice = input("Ваш выбор (1 или 2): ").strip()
+    
+    if choice == "1":
+        return [p['id'] for p in projects]
+    
+    while True:
+        try:
+            indices = input("Введите номера проектов через запятую (например: 1,3,5): ").strip()
+            selected = [int(i.strip()) for i in indices.split(",")]
+            
+            if not all(1 <= i <= len(projects) for i in selected):
+                print(f"Пожалуйста, введите числа от 1 до {len(projects)}")
+                continue
+                
+            return [projects[i-1]['id'] for i in selected]
+        except ValueError:
+            print("Пожалуйста, введите корректные номера проектов")
+
+def get_deletion_params(projects: list) -> tuple[list[int], str, Optional[int]]:
+    """Получить параметры для удаления изображений"""
+    project_ids = get_projects_for_deletion(projects)
+    
+    print("\nВыберите режим удаления изображений:")
+    print("1. Удалить все изображения")
+    print("2. Удалить несколько изображений с начала")
+    print("3. Удалить несколько изображений с конца")
+    
+    mode_map = {
+        "1": "all",
+        "2": "first_n",
+        "3": "last_n"
+    }
+    
+    while True:
+        mode = input("Выберите режим (1-3): ").strip()
+        if mode not in mode_map:
+            print("Неверный выбор. Пожалуйста, выберите число от 1 до 3.")
+            continue
+            
+        count = None
+        if mode in ("2", "3"):
+            while True:
+                try:
+                    count = int(input("Введите количество изображений для удаления: "))
+                    if count <= 0:
+                        print("Количество должно быть положительным числом")
+                        continue
+                    break
+                except ValueError:
+                    print("Пожалуйста, введите корректное число")
+        
+        return project_ids, mode_map[mode], count

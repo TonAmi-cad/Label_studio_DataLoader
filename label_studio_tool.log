@@ -13,3 +13,42 @@
 2024-11-08 12:44:40,054 - utils.logging_utils - INFO - Загрузка файла 1/93250: aug1_render_00000_1.png
 2024-11-08 12:44:50,351 - utils.logging_utils - INFO - Uploaded image D:\0_filesys\3_Library\0_Project\CNN_AntiDrone\DS_drone\Struct\img\augmented_images\aug1_render_00000_1.png to project 77
 2024-11-08 12:44:50,353 - utils.logging_utils - INFO - Загрузка файла 2/93250: aug1_render_00000_2.png
+2024-11-08 13:01:17,444 - utils.logging_utils - INFO - Начало удаления изображений из проекта 73
+2024-11-08 13:01:20,788 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 1 of 1500
+2024-11-08 13:01:20,789 - utils.logging_utils - INFO - Retrying in 0.5 seconds
+2024-11-08 13:01:23,685 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 2 of 1500
+2024-11-08 13:01:23,686 - utils.logging_utils - INFO - Retrying in 0.5 seconds
+2024-11-08 13:01:26,618 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 3 of 1500
+2024-11-08 13:01:26,619 - utils.logging_utils - INFO - Retrying in 0.5 seconds
+2024-11-08 13:01:29,512 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 4 of 1500
+2024-11-08 13:01:29,513 - utils.logging_utils - INFO - Retrying in 0.5 seconds
+2024-11-08 13:02:11,044 - utils.logging_utils - INFO - Начало удаления изображений из проекта 73
+2024-11-08 13:02:13,463 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 1 of 1500
+2024-11-08 13:02:13,464 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 13:02:16,886 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 2 of 1500
+2024-11-08 13:02:16,886 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 13:02:20,247 - utils.logging_utils - ERROR - Error: list indices must be integers or slices, not str. Attempt 3 of 1500
+2024-11-08 13:02:20,248 - utils.logging_utils - INFO - Retrying in 1 seconds
+2024-11-08 13:03:55,865 - utils.logging_utils - INFO - Начало удаления изображений из проекта 73
+2024-11-08 13:03:58,111 - utils.logging_utils - ERROR - Произошла ошибка: unhashable type: 'slice'
+2024-11-08 13:05:17,627 - utils.logging_utils - INFO - Начало удаления изображений из проекта 73
+2024-11-08 13:05:19,867 - utils.logging_utils - INFO - Удаление 2 изображений из проекта 73
+2024-11-08 13:05:23,332 - utils.logging_utils - INFO - Удалено изображение (ID: 4) из проекта 73
+2024-11-08 13:05:23,334 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 73
+2024-11-08 13:05:26,555 - utils.logging_utils - INFO - Удалено изображение (ID: 5) из проекта 73
+2024-11-08 13:05:26,557 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 73
+2024-11-08 13:05:26,558 - utils.logging_utils - INFO - Обработка успешно завершена
+2024-11-08 13:06:06,328 - utils.logging_utils - INFO - Начало удаления изображений из проекта 73
+2024-11-08 13:06:08,569 - utils.logging_utils - INFO - Удаление 2 изображений из проекта 73
+2024-11-08 13:06:11,782 - utils.logging_utils - INFO - Удалено изображение (ID: 10) из проекта 73
+2024-11-08 13:06:11,784 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 73
+2024-11-08 13:06:15,051 - utils.logging_utils - INFO - Удалено изображение (ID: 11) из проекта 73
+2024-11-08 13:06:15,052 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 73
+2024-11-08 13:06:15,053 - utils.logging_utils - INFO - Обработка успешно завершена
+2024-11-08 13:06:46,717 - utils.logging_utils - INFO - Начало удаления изображений из проекта 77
+2024-11-08 13:06:49,375 - utils.logging_utils - INFO - Удаление 2 изображений из проекта 77
+2024-11-08 13:06:52,138 - utils.logging_utils - INFO - Удалено изображение (ID: 110) из проекта 77
+2024-11-08 13:06:52,140 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:06:54,963 - utils.logging_utils - INFO - Удалено изображение (ID: 111) из проекта 77
+2024-11-08 13:06:54,965 - utils.logging_utils - INFO - Удалено изображение неизвестный файл из проекта 77
+2024-11-08 13:06:54,966 - utils.logging_utils - INFO - Обработка успешно завершена

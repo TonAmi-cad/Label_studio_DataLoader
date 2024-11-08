@@ -8,7 +8,7 @@ class LabelStudioSettings:
     TOKEN: str = "ad896bb9df35b118f6d2644b3d1fba5d19f56aaa"
     TIMEOUT: int = 80
     RETRIES: int = 1500
-    DELAY: float = 0.5
+    DELAY: int = 1
 
 
 @dataclass
